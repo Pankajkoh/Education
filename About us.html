@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Education</title>
+</head>
+<body>
+    <section class="header1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="abc"></a>
+        <div class=" nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()" ></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showmenu()"  ></i>
+        </nav>
+    </section>
+     <!------section-1------------>
+    
+        <section>
+            <div class="section-1">
+                <h3>About Us</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+            </div>
+            <div class="contact-box-1">
+                <div class="contact-left-2">
+                    <h3>lorem</h3>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                     <p>Quam ducimus, repellendus culpa autem officiis at et iste architecto similique, soluta deleniti commodi sequi non iure veniam nostrum quos sit? Deleniti ullam obcaecati commodi optio accusamus nihil, nostrum sapiente illo quisquam asperiores. Laborum quos eos placeat autem, quod cumque laudantium eius aperiam rerum temporibus rem itaque eveniet reiciendis voluptates nisi architecto adipisci quia. Vero minima, nihil qui explicabo optio accusamus pariatur libero odio nisi suscipit ullam dolorum veritatis officia eos illo. Fugit, optio fuga mollitia quibusdam error dolorem est ex odio perferendis, ad, debitis quia nemo officia. Voluptates rerum officiis modi. Libero eius nam porro incidunt dolorum. Eveniet odio natus excepturi reprehenderit rerum aperiam illum nam earum! Qui alias soluta explicabo, beatae nam laudantium, sit dolore, voluptatum incidunt harum sint nesciunt labore facilis omnis minima. Non nisi necessitatibus tempora excepturi? Aliquid doloremque esse magni ratione tempora enim deserunt tenetur nostrum? Recusandae!</p>
+                    
+                    <div class="icon">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                     
+                </div>
+                   
+                <div class="contact-right-2">
+                    <img src="images/london.png" alt="london.png">
+                
+                </div>
+            </div>
+        </section>
+        <!------Animated_Accordion------------>
+        <section class="Animated_Accordion">
+            <h2>Animated Accordion</h2>
+            <p>Click on the buttons to open the collapsible content.</p>
+
+
+            <button class="accordion">HTML</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">CSS</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">JAVASCRIPT</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+        </section>
+        <!------Footer------------>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sit dolores fugiat<br> magni quisquam fuga reiciendis quibusdam accusamus impedit nemo.</p>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with  <i class="fa fa-heart-o"> </i> by Pankaj Kohli</p>
+        </section>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+    
+</body>
+</html>
